@@ -1,0 +1,5 @@
+sonar.projectKey=tejareddy513_RSAPROJECT
+sonar.organization=tejareddy513
+sonar.sources=.
+sonar.host.url=https://sonarcloud.io
+sonar.javascript.lcov.reportPaths=coverage/lcov.info
