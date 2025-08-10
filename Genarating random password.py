@@ -9,22 +9,22 @@ def Genarate_randompassword():
   special = string.punctuation     #@!#$
 
 # combinations of all these 3 things
-all_chars = letters + digits + specials
+  all_chars = letters + digits + specials
 
 # Choose a random password length between 8 and 15
-length = random.randint(8, 15)
+  length = random.randint(8, 15)
 
 # Ensure at least one digit and one special character
-password = [
+  password = [
         random.choice(digits),
         random.choice(specials)
     ]
 # Fill the rest of the password means excepting the reamaning charcters
 #We subtract 2 because we already added: because we already added the special char and digit soo it wont take the next
-password += random.choices(all_chars, k=length - 2)
+  password += random.choices(all_chars, k=length - 2)
 # Shuffle to avoid predictable placement means  shiffing the places while  genarating the password
-random.shuffle(password)
-return ''.join(password)
+  random.shuffle(password)
+  return ''.join(password)
 
 # Generate and print a password
 print("Generated Password:", generate_password())
