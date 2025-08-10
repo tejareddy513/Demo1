@@ -3,7 +3,7 @@ import random
 import string
 # the string function is used to create a string type of password this will be combination of characters
 
-def Genarate_randompassword():
+def genarate_randompassword():
   letters = string.ascii_letters   #azAz
   digits = string.digits           #0-9
   special = string.punctuation     #@!#$
